@@ -1,0 +1,43 @@
+header {
+    flex-direction: column;
+    justify-content: center !important;
+  }
+  
+  h1 {
+    font-size: 2.5rem !important;
+  }
+  
+  .texte-bandeau p {
+    opacity: 1 !important;
+  }
+  
+  .texte-bandeau {
+    text-align: center !important;
+  }
+  
+  
+  .appareil {
+    flex-direction: column;
+  }
+  
+  .appareil img {
+    width: 100% !important;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  td,
+  th {
+    font-size: 0.6rem;
+    height: 4rem !important;
+  }
+  
+  .srcimage {
+    display: none;
+  }
+  
+  ul {
+    display: flex;
+    justify-content: center;
+    margin-left: 2rem;
+  }

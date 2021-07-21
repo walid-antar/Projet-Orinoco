@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/xsmall.css" media="(max-width:575.98px)" />
+  <link rel="stylesheet" href="../css/small.css" media="(min-width: 576px) and (max-width:767.98px)" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <meta name="description" content="panier orinoco" />
+  <title>Votre panier</title>
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="../images/logo-orinoco.png" alt="logoorinoco" />
+    <nav>
+      <a href="../pages/panier.html">Panier<i class="fas fa-shopping-cart"></i> </a>
+      <a href="../index.html"> Accueil <i class="fas fa-store"></i></a>
+    </nav>
+  </header>
+
+  <div class="image-bandeau">
+    <img src="../images/bandeau.jpeg" alt="image-bandeau" />
+    <div class="texte-bandeau">
+      <h1>Orinophotos</h1>
+      <p>Pour passer commande</p>
+    </div>
+  </div>
+
+  <section class="recap-commande">
+    <table id="container">
+
+      <thead>
+        <tr>
+          <th class="srcimage">Photos</th>
+          <th>Nom</th>
+          <th>Prix Unitaire</th>
+          <th>Quantitée</th>
+          <th>Supprimer</th>
+          <th>Prix Total</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>TOTAL</td>
+        <td id="prixTotal"></td>
+      </tr>
+      </tfoot>
+      
+    </table>
+
+    <button id="viderPanier" class="viderPanier">Vider tous le Panier </button>
+  </section>
+
+  <form action="#" method="POST" id="form">
+    <div>
+      <input type="radio" id="Mr" name="drone" value="Mr" checked>
+      <label for="Mr">Mr</label>
+
+      <input type="radio" id="Mme" name="drone" value="Mme">
+      <label for="Mme">Mme</label>
+    </div>
+
+    <div>
+      <label for="nom">Nom *:</label><br />
+      <input type="text" id="nom" name="nom" required="required" placeholder="Leo" />
+    </div>
+
+    <div>
+      <label for="prenom">Prenom *:</label><br />
+      <input type="text" id="prenom" name="prenom" required="required" placeholder="Martin" />
+    </div>
+
+    <div>
+      <label for="adresse">Adresse *:</label><br />
+      <input type="text" id="adresse" name="adresse" required="required" placeholder="3 rue des cerises" />
+    </div>
+
+    <div>
+      <label for="ville">Ville *:</label><br />
+      <input type="text" id="ville" name="text" required="required" placeholder=" Nice "
+        pattern="^[a-zA-Z]{1}[a-zA-Z'À-ÿ -]+$" />
+    </div>
+
+    <div>
+      <label for="email">E-mail *:</label><br />
+      <input type="email" id="email" name="email" required="required" placeholder="martin@yahoo.fr"
+        pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z.]{2,15}" />
+    </div>
+
+    <input type="submit" value="Commander" id="envoiFormulaire" />
+
+    <p>* Champ Obligatoire</p>
+  </form>
+
+  <footer>
+    <ul>
+      <li><a href="#"> Propos</a></li>
+      <li><a href="#"> Privée</a></li>
+      <li><a href="#">Conditions d'utilisations</a></li>
+    </ul>
+  </footer>
+  <script src="../js/camera.js"></script>
+  <script src="../js/panier.js"></script>
+</body>
+
+</html>
