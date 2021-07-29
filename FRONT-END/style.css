@@ -193,6 +193,14 @@ form div {
   margin-bottom: 1rem;
 }
 
+input:invalid {
+  box-shadow: 0 0 5px 1px red;
+}
+
+input:focus:invalid {
+  outline: none;
+}
+
 td ,th{
   border: 1px solid white;
   height: 7rem;
